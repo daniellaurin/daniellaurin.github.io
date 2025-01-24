@@ -1,51 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel laurin</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #666;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        a {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Daniel Laurin | Developer</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Under Construction</h1>
-        <p>We're currently working on improving our website. Thank you for your patience!</p>
-        <a href="#" target="_blank">Come back later!</a>
+
+  <!-- Navbar -->
+  <nav>
+    <h1 data-value="Daniel Laurin">Daniel Laurin</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <ion-icon class="times" name="close-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <img src="assets/images/profile-croped.png" alt="jane-doe" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Driven by a deep passion for technology, I am eager to apply my expertise in IT and build innovative projects. 
+        With a relentless pursuit of knowledge and a commitment to becoming 1% better every day, 
+        I aim to leverage my skills in net admin, cyber, automation and in general tinker and build cool things :)
+      </p>
     </div>
+  </section>
+
+  <!-- More about -->
+  <section class="more-about">
+    <div class="more-about-content">
+      <img src="assets/icons/arch.svg" alt="" loading="lazy" class="more-about-img"/>
+      <div class="more-about-text">
+    </div>
+    <h2>Me and Linux ❤️</h2>
+    <p>
+      My Linux journey began three years ago, and I've been a dedicated user ever since. Rather than dual-booting, I've opted for virtual machines and emulation (wine), 
+      which has proven to be an incredibly smooth transition. Despite some initial challenges with Linux Mint in my early days, 
+      I quickly discovered that moving from Windows to Linux is not only doable but made computers fun and not frustrating.
+    </p>
+    <p>
+      The world of Linux has been nothing short of transformative. The level of customization is truly remarkable, and the Free and Open Source Software (FOSS) ecosystem 
+      has consistently impressed me. Still finding new robust alternatives to expensive proprietary software (looking at you adobe!).
+    </p>
+    <p>
+      During my first year of college, I started with Linux Mint and the Cinnamon desktop environment, using it for schoolwork, browsing, and light gaming. 
+      As my interest in technology deepened, I found myself immersed in Linux forums, blogs, and YouTube content. The emerging Wayland protocol (a replacement of the Xorg display server) 
+      caught my attention, sparking my curiosity about more technical distributions.
+    </p>
+  <p>
+    Arch Linux became my next adventure. Its comprehensive documentation, bleeding-edge AUR packages, and developer-friendly tooling made it the perfect fit. 
+    I embraced Hyprland as my window manager and hoping on the Wayland train, falling in love with its smooth animations and glossy aesthetic (reminded me of Windows 7). 
+    Not to mention the new gained online street cred (I use arch btw!).
+  </p>
+  <p>
+    My Linux exploration continues. I'm currently eyeing potential next steps: experimenting with alternative init systems distros like Artix or Void, 
+    and exploring NixOS for its high-replication design (amazing for servers). Each distribution brings new learning opportunities and challenges.
+  </p>
+  <p>
+    Three years into my Linux journey, I can confidently say it's been an exhilarating ride. While I do get lazy with documentation at times, my GitHub will 
+    soon showcase more of my Linux-related projects. Stay tuned—if I can motivate myself to write those forsaken README files lmao.
+  </p>
+  </section>
+
+  <section class="more-about">
+    <div class="more-about-content">
+      <div class="more-about-text">
+        <h2>Other Hobbies 😎 </h2>
+        <p>
+          When I'm not diving deep into the world of Linux, I enjoy exploring a variety of other hobbies. Whether it's tinkering, watching movies, or playing video games, 
+          I found that having side hobbies is best, just to avoid on getting bored on your main hobby. Here are a few things I like doing:<br><br>
+        </p>
+        <ul class="more-about-text">
+          <li>
+            <p>
+            <img src="assets/icons/nerf.svg" alt="" class="hobby-img"/>
+            <strong>Nerf Gun Modding:<br></strong>Recently, I developed a keen interest in electronics modification, with a particular focus on Nerf guns. This hobby involved intricate customization techniques, 
+            including painting, 3D-printed accessory kits, and bypassing safety mechanism to make the nerf gun more accurate and hit harder. Through these projects, I acquired intermediate soldering skills and developed a 
+            passion for tinkering. Recently, this interest has expanded to exploring Arduino-based gadget creation and potentially delving into embedded programming and robotics.
+            </p>
+          </li>
+          <li>
+            <p>
+            <img src="assets/icons/movies.svg" alt="" class="hobby-img"/>
+            <strong>Movies:<br></strong>I have a strong appreciation for science fiction and dystopian war films. My favorite sci-fi movies currently are "Children of Men," "The Matrix," and "Alien," 
+            alongside intense war movies/tv like "Apocalypse Now," "Band of Brothers," and "Zero Dark Thirty." These films offer compelling explorations of human resilience, 
+            pottential future technologes or threats, for some reason these stories made me think and peaked my interest the most.
+            </p>
+          </li>
+          <li>
+            <p>
+            <img src="assets/icons/gaming.svg" alt="" class="hobby-img"/>
+            <strong>Gaming:<br></strong> I occasionally do some very light gaming, I've been playing shooters most of the time when I feel like playing games like DOOM and CSGO. But, now I've gotten more into
+            ROM Hacking and playing emulated nintendo games like Pokemon and Kirby on my laptop when I'm bored.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/tux.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/azure.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/cisco.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/docker.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/powershell.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/wireshark.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="assets/icons/debian.svg" alt="" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Linux Homelab</h3>
+        <p class="project-details">
+          My Linux homelab is a self-hosting environment where I run various services and applications 
+          on Linux-based servers. It's a space for experimenting with open-source software, automation, 
+          and system administration skills.
+        </p>
+        <a href="https://github.com/daniellaurin/homelab" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/icons/honeypot.svg" alt="" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Honeypot</h3>
+        <p class="project-details">
+          I've set up a vulnerable server exposed to the public internet to observe and analyze the tools and 
+          tactics attackers are using in real-time. This helps in understanding current threats and improving 
+          security measures.
+        </p>
+        <a href="" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/icons/microsoft.svg" alt="" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Windows Homelab</h3>
+        <p class="project-details">
+          I’ve created a cloud-based homelab using Microsoft Azure to explore cloud technologies. 
+          This setup allows me to experiment with virtual machines, cloud services, 
+          and infrastructure management in a flexible and scalable environment.
+        </p>
+        <a href="https://github.com/daniellaurin/win_home_lab.exe" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Get In Touch With Me<br>
+      (under construction)
+    </h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyylnggw" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+              class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="https://github.com/daniellaurin" target="_blank"><img src="assets/icons/github.svg" alt="Github" loading="lazy"
+      class="socicon" /></a>
+    <a href="https://x.com/kepler_22bp" target="_blank"><img src="assets/icons/twitter.svg" alt="Twitter" loading="lazy"
+        class="socicon" /></a>
+    <a href="https://www.linkedin.com/in/daniellaurin21/" target="_blank"><img src="assets/icons/linkedin.svg" alt="Linkedin" loading="lazy"
+        class="socicon" /></a>
+    
+  </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/arrow.svg" class="socicon up-arrow"
+      alt="" /></i>
+
+  <!-- Footer section -->
+  <footer>
+    <p>
+      Website built with &#x2661; by <a>Daniel</a>
+    </p>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
